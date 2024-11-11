@@ -304,7 +304,7 @@ let validationData = loadAndTransformData "validationsample.csv"
 
 let manhattanDistance (p1: int[]) (p2: int[]) =
     Array.map2 (fun x y -> abs(x - y)) p1 p2 |> Array.sum |> float
-    
+
 let minkowskiDistance (p: int) (p1: int[]) (p2: int[]) =
     let diff = Array.map2 (fun x y -> float(abs(x - y)) ** p ) p1 p2
     let sum = float(Array.sum diff)
@@ -334,7 +334,7 @@ validateValidationData 3 euclideanDistance
 validateValidationData 3 manhattanDistance
 validateValidationData 3 (minkowskiDistance 3)
 
-///////podsumowanie 
+///////podsumowanie
 // 1NN Euclidean: 94.400000
 // 2NN Euclidean: 94.400000
 // KNN Euclidean for k = 10: 93.600000
