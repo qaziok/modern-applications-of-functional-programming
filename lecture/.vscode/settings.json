@@ -1,0 +1,6 @@
+{
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.method": "command",
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "cSpell.language": "en,pl"
+}
